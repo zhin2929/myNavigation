@@ -1,0 +1,34 @@
+* {
+  box-sizing: border-box;
+}
+body {
+
+}
+nav {
+  /*background-color: aqua;*/
+
+  width: 70%;
+  margin: 0 auto;
+}
+nav div {
+  border-radius: 10px;
+  background-color: #666;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 5px 15px 10px;
+}
+nav div h1 {
+  font-size: 1.5rem;
+  margin: 5px 0;
+}
+nav div a {
+  background-color: #abc;
+  padding: 10px 5px;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+}
+nav div a:hover {
+  text-decoration: underline;
+}
+
