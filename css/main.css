@@ -1,34 +1,106 @@
 * {
   box-sizing: border-box;
 }
+
+
 body {
 
 }
-nav {
-  /*background-color: aqua;*/
 
-  width: 70%;
+header {
+  background: deepskyblue;
+  padding: 0 7.5%;
+}
+header ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  margin: 0;
+}
+header ul a {
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+  color: white;
+}
+header ul a:hover {
+  background-color: #0DBBA1;
+}
+@media all and (max-width: 768px) {
+  header ul {
+    justify-content: space-around;
+  }
+}
+@media all and (max-width: 600px) {
+  header {
+    padding: 0;
+  }
+  header ul {
+    -webkit-flex-flow: column wrap;
+    flex-flow: column wrap;
+    padding: 0;
+  }
+   header ul a { 
+    text-align: center; 
+    padding: 10px;
+    border-top: 1px solid rgba(255,255,255,0.3); 
+    border-bottom: 1px solid rgba(0,0,0,0.1); 
+  }
+  header ul li:last-of-type a {
+    border-bottom: none;
+  }
+}  
+
+.nav-container {
+  background-color: #18B444;
+  margin: 0 7.5%;
+  /*height: 300px;*/
+}
+.nav-item h1 {
+  margin: 0;
+}
+.nav-container .nav-item {
+  width: 100%;
+  padding: 1em;
+  /*height: 200px;*/
+}
+
+/*.nav {
+  width: 85%;
   margin: 0 auto;
 }
-nav div {
+.nav div {
   border-radius: 10px;
   background-color: #666;
   margin-top: 30px;
   margin-bottom: 30px;
   padding: 5px 15px 10px;
 }
-nav div h1 {
+.nav div h1 {
   font-size: 1.5rem;
   margin: 5px 0;
 }
-nav div a {
+.nav div a {
   background-color: #abc;
   padding: 10px 5px;
   border-radius: 5px;
   text-decoration: none;
   display: inline-block;
 }
-nav div a:hover {
+.nav div a:hover {
   text-decoration: underline;
+}*/
+
+
+footer {
+  background-color: #999;
+  text-align: center;
+  margin: 0;
+  padding: 5px;
+  /*display: flex;*/
 }
 
+footer a {
+  text-decoration: none;
+  font-size: 20px;
+}
