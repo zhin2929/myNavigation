@@ -16,10 +16,11 @@ body {
   left: -50px;
   transform: rotate(-45deg);
   font-weight: bold;
-  transition: all 0.3s;
+  transition: all 0.5s;
 }
 .fork-me:hover {
-  background-color: #04F0C3;
+  transform: rotate(-45deg) scale(1.03,1.03);
+  box-shadow: 0px 2px 4px #5D5C5C;
 }
 
 
@@ -38,9 +39,11 @@ header ul a {
   display: block;
   padding: 1em;
   color: white;
+  transition: all 0.5s;
 }
 header ul a:hover {
   background-color: #0DBBA1;
+  text-shadow: 2px 2px 4px #5D5C5C;
 }
 @media all and (max-width: 768px) {
   header ul {
@@ -70,7 +73,13 @@ header ul a:hover {
 .nav-container {
   background-color: #FDFBFB;
   margin: 0 12.5%;
-  /*height: 300px;*/
+}
+.nav-container a {
+  color: #3155F8;
+}
+.nav-container a:hover {
+  color: #05FEF1;
+  background-color: #5E1CD1;
 }
 .nav-item h1 {
   margin: 0;
@@ -116,34 +125,9 @@ header ul a:hover {
   /*line-height: 20px;*/
 }
 .nav-item  div a:hover {
-  background-color: #F2E64D;
+  /*background-color: #F2E64D;*/
+  
 }
-
-/*.nav {
-  width: 85%;
-  margin: 0 auto;
-}
-.nav div {
-  border-radius: 10px;
-  background-color: #666;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  padding: 5px 15px 10px;
-}
-.nav div h1 {
-  font-size: 1.5rem;
-  margin: 5px 0;
-}
-.nav div a {
-  background-color: #abc;
-  padding: 10px 5px;
-  border-radius: 5px;
-  text-decoration: none;
-  display: inline-block;
-}
-.nav div a:hover {
-  text-decoration: underline;
-}*/
 
 
 footer {
