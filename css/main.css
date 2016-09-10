@@ -90,12 +90,7 @@ header ul a:hover {
   padding: 1em;
 }
 .nav-item  .links {
-  /*display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-start;*/
-  /*align-items: stretch;*/
-  /*align-content: flex-end;*/
+  
 }
 .nav-item  .links div {
   /*background-color: #6611C1;*/
@@ -141,4 +136,11 @@ footer {
 footer a {
   text-decoration: none;
   font-size: 20px;
+}
+
+@media all and (max-width: 600px) {
+  .nav-container {
+    margin: 0 0;
+    padding: 0 2em;
+  }
 }
