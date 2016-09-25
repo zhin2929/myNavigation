@@ -14,12 +14,34 @@ body {
   position: absolute;
   top: 40px;
   left: -50px;
-  transform: rotate(-45deg);
+  transform: rotateZ(-45deg);
+  font-family: arial, sans-serif;
   font-weight: bold;
-  transition: all 0.5s;
+  box-shadow: 4px 4px 10px #5D5C5C;
+  transition: all 0.8s;
+  color: #000;
+  /*outline: #271212 solid thin;*/
 }
+.fork-me::before,
+.fork-me::after {
+  content: "";
+  width: 100%;
+  display: block;
+  position: absolute;
+  top: 1px;
+  left: 0;
+  height: 1px;
+  background: #000;
+}
+.fork-me::after{
+  bottom: 1px;
+  top: auto;
+}
+
 .fork-me:hover {
-  box-shadow: 0px 2px 4px #5D5C5C;
+  color: #fff;
+  background-color: #19B678;
+  text-shadow: 4px 4px 12px #000
 }
 
 
