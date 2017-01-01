@@ -4,7 +4,8 @@
 
 
 body {
-  background-color: #DBD4D4;
+  background-color: #002a35;
+  color: #839496;
 }
 .fork-me {
   background-color: #D3EF36;
@@ -46,7 +47,7 @@ body {
 
 
 header {
-  background: deepskyblue;
+  background: rgba( 0, 0, 0, 0.8);
   padding: 0 12.5%;
 }
 header ul {
@@ -59,12 +60,13 @@ header ul a {
   text-decoration: none;
   display: block;
   padding: 1em;
-  color: white;
+  color: #2aa198;
   transition: all 0.5s;
 }
 header ul a:hover {
   background-color: #0DBBA1;
   text-shadow: 2px 2px 4px #5D5C5C;
+  color: #fff;
 }
 @media all and (max-width: 768px) {
   header ul {
@@ -92,19 +94,20 @@ header ul a:hover {
 }  
 
 .nav-container {
-  background-color: #FDFBFB;
+/*  background-color: #FDFBFB;*/
   margin: 0 12.5%;
 }
 .nav-container a {
-  color: #3155F8;
+  color: #2aa198;
 }
 .nav-container a:hover {
   color: #05FEF1;
-  background-color: #5E1CD1;
+/*  background-color: #5E1CD1;*/
 }
 .nav-item h1 {
   margin: 0;
-  padding: 10px 0;
+  padding: 30px 0;
+  font-weight: 500;
 }
 .nav-container .nav-item {
   width: 100%;
@@ -115,7 +118,7 @@ header ul a:hover {
 }
 .nav-item  .links div {
   /*background-color: #6611C1;*/
-  margin: 5px 5px 30px;
+  margin: 35px 0px;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -125,9 +128,15 @@ header ul a:hover {
 }
 .links h2 {
   margin: 0;
-  padding: 10px 15px;
-  /*background-color: #E10CE3;*/
-  width: 100%;
+  padding: 5px 15px;
+  background-color: #0c94e3;
+  width: auto;
+  color: white;
+  font-size: 1.2em;
+  /* padding-right: 2em; */
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+   font-weight: 500; 
 }
 .nav-item  div a {
   background-color: #999;
@@ -147,10 +156,11 @@ header ul a:hover {
 
 
 footer {
-  background-color: #999;
+  background-color: #002a35;
   text-align: center;
   margin: 0;
   padding: 5px;
+  border-top: 1px solid #999;
   /*display: flex;*/
 }
 
